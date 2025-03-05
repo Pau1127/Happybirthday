@@ -1,0 +1,139 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    /* Aplica box-sizing globalmente */
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(217deg, #f59dcd, #b571e6, #56dce0, #66f1c3);
+    text-align: center;
+    color: #4b0082;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    /* Reducido el tamaño base del texto */
+}
+
+/* Encabezados más pequeños */
+h1 {
+    font-size: 3.5em;
+    /* Reducido el tamaño */
+    margin-top: 50px;
+    color: #6a5acd;
+}
+
+h2 {
+    font-size: 2em;
+    /* Reducido el tamaño */
+    margin: 20px;
+    color: #9370db;
+}
+
+h3 {
+    font-size: 1.7em;
+    /* Reducido el tamaño */
+    margin: 15px;
+    color: #9370db;
+}
+
+/* Estilos del carrusel */
+.carrusel {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Ajuste del tamaño de las imágenes */
+.carrusel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Reducido para que las imágenes no sean tan grandes */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Botones de navegación */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(147, 112, 219, 0.8);
+    color: white;
+    border: none;
+    padding: 12px;
+    /* Reducido el tamaño del padding */
+    font-size: 1.5em;
+    /* Reducido el tamaño del texto */
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carrusel-btn:hover {
+    background-color: rgba(106, 90, 205, 1);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .carrusel {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        /* Reducido aún más para pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        /* Reducido aún más para pantallas pequeñas */
+    }
+
+    .carrusel-item img {
+        max-height: 250px;
+        /* Ajusta aún más las imágenes para pantallas pequeñas */
+    }
+}
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(217deg, #f59dcd, #b571e6, #56dce0, #66f1c3);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    /* Reducido el tamaño del texto */
+}
+
+footer p {
+    margin: 0;
+}

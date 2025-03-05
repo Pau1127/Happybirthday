@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Felicidades Ángelica!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>¡Feliz cumpleaños, Ángelica!</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Primer carrusel -->
+      <section class="carrusel-section">
+        <div class="carrusel" id="carrusel1">
+          <div class="carrusel-inner">
+            <div class="carrusel-item active">
+              <img
+                src="imagenes/1.jpg"
+                alt="Ángelica sonriendo en su cumpleaños"
+              />
+            </div>
+            <div class="carrusel-item">
+              <img src="imagenes/4.jpg" alt="Ángelica con amigos celebrando" />
+            </div>
+            <div class="carrusel-item">
+              <img src="imagenes/6.jpg" alt="Ángelica soplando las velas" />
+            </div>
+          </div>
+          <!-- Botones de navegación -->
+          <button
+            class="carrusel-btn prev"
+            aria-label="Anterior"
+            data-carrusel="carrusel1"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-btn next"
+            aria-label="Siguiente"
+            data-carrusel="carrusel1"
+          >
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <section class="mensajes">
+        <h2>
+          ¡Felicidades! Que este nuevo año sea un tiempo de renovación, amor,
+          salud y logros.
+        </h2>
+        <h3>¡Te mereces todo eso y más!</h3>
+        <h3>
+          Para mí, ser parte de tu vida y poder celebrar tu cumpleaños es un
+          regalo. Que todos tus deseos se hagan realidad y pueda acompañar tus
+          logros a tu lado. ¡Muchas felicidades! 🎁 Tu familia.
+        </h3>
+      </section>
+
+      <!-- Segundo carrusel -->
+      <section class="carrusel-section">
+        <div class="carrusel" id="carrusel2">
+          <div class="carrusel-inner">
+            <div class="carrusel-item active">
+              <img
+                src="imagenes/2.jpg"
+                alt="Ángelica en una foto de infancia"
+              />
+            </div>
+            <div class="carrusel-item">
+              <img
+                src="imagenes/3.jpg"
+                alt="Ángelica en una reunión familiar"
+              />
+            </div>
+            <div class="carrusel-item">
+              <img
+                src="imagenes/5.jpg"
+                alt="Ángelica con su pastel de cumpleaños"
+              />
+            </div>
+          </div>
+          <!-- Botones de navegación -->
+          <button
+            class="carrusel-btn prev"
+            aria-label="Anterior"
+            data-carrusel="carrusel2"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-btn next"
+            aria-label="Siguiente"
+            data-carrusel="carrusel2"
+          >
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- Botones para seleccionar la canción -->
+      <div class="audio-controls">
+        <button data-song="mp3/Cumpleaños Feliz Chileno V1.mp3" id="song1">
+          Reproducir Canción 1
+        </button>
+        <button data-song="mp3/cumpleaños feliz.mp3" id="song2">
+          Reproducir Canción 2
+        </button>
+      </div>
+
+      <!-- Reproductor de audio -->
+      <audio id="miAudio" controls style="display: none">
+        <source src="mp3/Cumpleaños Feliz Chileno V1.mp3" type="audio/mpeg" />
+        <source src="mp3/cumpleaños feliz.mp3" type="audio/mpeg" />
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025
+        <a href="mailto:alita.27.pc@gmail.com">alita.27.pc@gmail.com</a>. Todos
+        los derechos reservados. | Diseñado con ❤️ por Ti.
+      </p>
+      <img
+        src="footer/9.jpg"
+        class="img-fluid rounded-circle"
+        alt="Imagen de contacto"
+        style="width: 50px; height: 50px; object-fit: cover"
+      />
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
